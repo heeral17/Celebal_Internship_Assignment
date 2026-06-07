@@ -1,0 +1,9 @@
+customer_id,first_name,last_name,email,city,state,join_date,is_premium
+101,Aarav,Sharma,aarav.s@email.com,Mumbai,Maharashtra,2024-01-15,TRUE
+102,Priya,Patel,priya.p@email.com,Ahmedabad,Gujarat,2024-02-20,FALSE
+103,Rohan,Gupta,rohan.g@email.com,Delhi,Delhi,2024-03-10,TRUE
+104,Sneha,Reddy,sneha.r@email.com,Hyderabad,Telangana,2024-04-05,FALSE
+105,Vikram,Singh,vikram.s@email.com,Jaipur,Rajasthan,2024-05-12,TRUE
+106,Ananya,Iyer,ananya.i@email.com,Chennai,Tamil Nadu,2024-06-18,FALSE
+107,Karan,Mehta,karan.m@email.com,Pune,Maharashtra,2024-07-22,TRUE
+108,Divya,Nair,divya.n@email.com,Kochi,Kerala,2024-08-30,FALSE

@@ -1,0 +1,8 @@
+product_id,product_name,category,brand,unit_price,stock_qty
+201,Wireless Earbuds,Electronics,BoAt,1499.0,250
+202,Cotton T-Shirt,Clothing,Levi's,799.0,500
+203,Smart Watch,Electronics,Noise,2999.0,150
+204,Running Shoes,Clothing,Nike,4599.0,120
+205,Bluetooth Speaker,Electronics,JBL,3499.0,200
+206,Bedsheet Set,Home,Spaces,1299.0,300
+207,Laptop Stand,Electronics,AmazonBasics,899.0,180
