@@ -16,7 +16,8 @@ Build a complete cloud-based data pipeline on Microsoft Azure by:
 Microsoft **Azure** is a cloud computing platform and service created by Microsoft that provides on-demand access to computing resources such as servers, storage, databases, networking, analytics, artificial intelligence, and security services over the internet.  
 Organizations use Azure to build, deploy, manage, and scale applications without having to purchase and maintain physical infrastructure.
 
-![Cloud Services](https://raw.githubusercontent.com/heeral17/Assignment4/main/Assignment4/photos/Cloud-Service-Models.png)
+
+![Cloud Services](https://raw.githubusercontent.com/heeral17/Assignment4/main/photos/Cloud-Service-Models.png)
 **Benefits of Azure**
 
 * Scalability and flexibility  
@@ -27,7 +28,9 @@ Organizations use Azure to build, deploy, manage, and scale applications without
 
 **In this assignment  PaaS(Platform as a Service)** — ADF and Blob Storage are both fully managed by Azure. We only configured and used them, no server management needed.
 
-![Azure and its services][image2](https://raw.githubusercontent.com/heeral17/Assignment4/main/Assignment4/photos/Azure-services.png)
+
+![Azure Services](https://raw.githubusercontent.com/heeral17/Assignment4/main/photos/Azure-services.png)
+
 
 **Azure Data Factory (ADF)**
 
