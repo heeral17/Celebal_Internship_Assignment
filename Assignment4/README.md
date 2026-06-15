@@ -17,7 +17,7 @@ Microsoft **Azure** is a cloud computing platform and service created by Microso
 Organizations use Azure to build, deploy, manage, and scale applications without having to purchase and maintain physical infrastructure.
 
 
-![Cloud Services](https://raw.githubusercontent.com/heeral17/Assignment4/main/photos/Cloud-Service-Models.png)
+![Cloud Services](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/Assignment4/photos/Azure-services.png)
 **Benefits of Azure**
 
 * Scalability and flexibility  
