@@ -1,13 +1,9 @@
-
 # Apache Spark Basics - Week 5 Assignment
-
----
 
 ## Objective
 
 Learn the fundamentals of Apache Spark and use PySpark DataFrames to clean, transform and analyze the Superstore retail dataset — covering the full Extract, Transform, Load (ETL) cycle using distributed in-memory processing.
 
----
 # Apache Spark - Big Data Processing & Data Cleaning
 
 ## What is Apache Spark?
@@ -22,7 +18,6 @@ Apache Spark is an open-source distributed data processing framework designed fo
 * Scalable across clusters
 * Fault-tolerant architecture
 
----
 
 ## Spark vs MapReduce
 
@@ -41,26 +36,17 @@ Apache Spark is an open-source distributed data processing framework designed fo
 * Slow iterative computations
 * Complex workflow management
 
----
 ### Benefits
 
 * Faster machine learning iterations
 * Reduced disk access
 * Better performance for analytics
 * Efficient caching and reuse
+![DataFrame](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/Assignment5/photos/DataFrame.png)
 
 
----
-## Understanding Shuffle
+![Shuffle](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/Assignment5/photos/Shuffle.png)
 
-Shuffle occurs when Spark redistributes data across partitions.
-
-### Common Operations Causing Shuffle
-
-* groupBy()
-* join()
-* distinct()
-* repartition()
 
 ## Handling Nulls Before Aggregations
 
@@ -76,8 +62,6 @@ Always clean null values before:
 * Prevent inaccurate calculations
 * Improve data quality
 * Avoid unexpected results
-
----
 
 ## Schema Inference Risk
 
@@ -98,6 +82,8 @@ can be risky when data contains inconsistent date formats.
 ### Best Practice
 
 Define schemas explicitly for production workloads.
+![DataFrame immutability](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/Assignment5/photos/imm.png)
+
 
 ## Spark Ecosystem
 
@@ -120,15 +106,12 @@ Define schemas explicitly for production workloads.
 
 This assignment uses Spark's **DataFrame API**, which provides SQL-like operations on distributed data while Spark handles parallelization under the hood.
 
----
 
 ## Dataset
 
 **Superstore.csv** — Retail sales dataset containing order, customer, product, and sales information across multiple US regions.
 
 Key columns: `Order Date`, `Ship Date`, `Region`, `Category`, `Product Name`, `Sales` (renamed to `Price`), `Quantity`, `Discount`, `Profit`
-
----
 
 ## Pipeline Steps
 
@@ -169,8 +152,6 @@ Wrote the cleaned, transformed DataFrame to disk:
 #df.write.mode("overwrite").csv("output")
 ```
 
----
-
 ## Key Observations
 
 - Raw CSV data required explicit quote/escape handling — `inferSchema` alone is not enough for messy real-world text fields
@@ -178,7 +159,6 @@ Wrote the cleaned, transformed DataFrame to disk:
 - `groupBy()` + aggregate functions (`count()`, `sum()`, `avg()`) provide fast distributed aggregation without manual looping
 - In-memory processing made repeated transformations on the dataset noticeably fast compared to a traditional disk-based approach
 
----
 
 ## Tech Stack
 
@@ -189,7 +169,6 @@ Wrote the cleaned, transformed DataFrame to disk:
 | Jupyter Notebook | Development environment |
 | Python 3.13 | Core language |
 
----
 
 ## Repository Structure
 
@@ -203,7 +182,6 @@ spark-assignment/
 │   └── (cleaned CSV output written by Spark)
 └── README.md
 ```
----
 
 ## How to Run
 
@@ -212,11 +190,7 @@ pip install pyspark
 jupyter notebook Spark_Assignment5.ipynb
 # Kernel -> Restart & Run All
 ```
----
 
 ## Author
 
 **Heeral Jain**
-
----
-*Celebal Summer Internship 2026 — AnaVerse Data Engineering Track | Week 5*
