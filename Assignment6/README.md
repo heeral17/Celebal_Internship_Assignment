@@ -36,7 +36,7 @@ When reading Parquet, Spark pushes `filter()` conditions into the file reader it
 
 ```python
 # Spark reads ONLY Furniture rows from disk — not the entire file
-df = spark.read.parquet("data/").filter(col("Category") == "Furniture")
+selected_column.filter(selected_column.Total_amount > 50000)
 ```
 
 ### Wide Transformations & Shuffle
@@ -65,19 +65,17 @@ Real-time data processing
 Machine learning
 Data warehousing and reporting
 
-## Pipeline Steps
-
-| Step | Operation | Code |
+### Pipeline Steps
+| Step | Operation | Method |
 |---|---|---|
-| 1 | Load CSV | `spark.read.csv(header=True, inferSchema=True)` |
-| 2 | Save Parquet | `df.write.parquet("path")` |
-| 3 | Read Parquet | `spark.read.parquet("path")` |
-| 4 | Rename + Cast | `withColumnRenamed()`, `.cast("double")` |
-| 5 | Filter AND | `filter((col('A')=='x') & (col('B')>100))` |
-| 6 | Filter OR | `filter((col('A')=='x') \| (col('B')=='y'))` |
-| 7 | Add column | `withColumn('final_price', col('Price') * 1.18)` |
-| 8 | GroupBy agg | `groupBy('Category').agg({'Price':'sum'})` |
-| 9 | Save output | `df.write.mode('overwrite').parquet("output")` |
+| 1 | Load CSV | `spark.read.csv` with quote/escape handling |
+| 2 | Convert to Parquet | `df.write.parquet` — columnar, faster reads |
+| 3 | Rename + Cast | `withColumnRenamed`, `cast('double')`, `to_date` |
+| 4 | Filter (AND) | `(col('Total_amount') > 50000)` |
+| 5 | Derive column | `withColumn('total_amount', Price * quantity)` |
+| 6 | Aggregate | `groupBy('Category').agg(count)` |
+| 7 | Save output | Parquet  using `write.mode('overwrite')` |
+
 
 
 ## Best Practices Applied
@@ -99,6 +97,9 @@ spark-assignment/
 │   └── (Parquet + CSV output files)
 ├── Assignment_6.ipynb
 └── README.md
+|__photos
+      |_ Architect.png
+      
 ```
 
 ## Tech Stack
