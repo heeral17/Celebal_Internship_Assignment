@@ -2,7 +2,7 @@
 
 **Objective:**
 
-Build a complete cloud-based data pipeline on Microsoft Azure by:
+Build a complete  cloud-based data pipeline on Microsoft Azure by:
 
 * Setting up Azure cloud infrastructure (Resource Group, Storage Account)  
 * Implementing a data pipeline using Azure Data Factory (ADF)  
