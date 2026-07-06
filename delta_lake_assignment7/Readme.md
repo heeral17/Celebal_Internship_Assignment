@@ -5,7 +5,7 @@
     
 Perform incremental data processing using Delta Lake.
 
-![Delta lake](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/Assignment7/Deltalake.png)
+![Delta lake](https://github.com/heeral17/Celebal_Internship_Assignment/blob/main/delta_lake_assignment7/Deltalake.png)
 
 
 ## Delta Lake — Why It Matters
