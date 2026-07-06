@@ -1,7 +1,7 @@
 # Delta Lake  — Week 7 Assignment
 
 
-## Objective
+##   Objective
     
 Perform incremental data processing using Delta Lake.
 
