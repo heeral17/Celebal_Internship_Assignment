@@ -18,19 +18,64 @@ order_items.csv(item_id, order_id, product_id, quantity, unit_price, discount_pe
 
 ## Project Workflow
 
+![Architecture](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/E_Commerce_Order_Analytics/photos/Architecture.png)
+
+
 ```text
-Raw CSV Files
-      ↓
-Data Profiling
-      ↓
-Data Cleaning & Validation
-      ↓
-SQLite Database
-      ↓
-SQL Analytics
-      ↓
-Business Reports
+┌──────────────────────────┐
+│      Raw CSV Files       │
+│  customers, products,    │
+│  orders, order_items     │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│      Data Profiling      │
+│  Schema Validation       │
+│  Null Checks             │
+│  Duplicate Detection     │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│ Data Cleaning & Quality  │
+│  • Handle Nulls          │
+│  • Remove Duplicates     │
+│  • Validate Dates        │
+│  • Check Discounts       │
+│  • Verify Relationships  │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│     SQLite Database      │
+│  Normalized Schema       │
+│  customers               │
+│  products                │
+│  orders                  │
+│  order_items             │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│      SQL Analytics       │
+│  Revenue Analysis        │
+│  CLV                     │
+│  Cohort Retention        │
+│  YoY Growth              │
+│  Product Affinity        │
+└────────────┬─────────────┘
+             │
+             ▼
+┌──────────────────────────┐
+│     Business Reports     │
+│  KPI Dashboard Output    │
+│  Revenue Insights        │
+│  Customer Insights       │
+│  Product Insights        │
+└──────────────────────────┘
 ```
+
 
 
 ## Step 1 — Data Generation
@@ -79,6 +124,11 @@ Performed data quality checks and cleaning operations.
 * order_date cannot be in the future
 * order_items.order_id must exist in orders
 * order_items.product_id must exist in products
+
+# Most important Concepts of Data engineering
+
+![Validation](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/E_Commerce_Order_Analytics/photos/Validation.png)
+
 
 ## Step 3 — Database Design & SQL Analytics
 
