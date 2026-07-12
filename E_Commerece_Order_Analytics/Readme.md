@@ -18,8 +18,7 @@ order_items.csv(item_id, order_id, product_id, quantity, unit_price, discount_pe
 
 ## Project Workflow
 
-![Architecture](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/E_Commerce_Order_Analytics/photos/Architecture.png)
-
+![Architecture](https://github.com/heeral17/Celebal_Internship_Assignment/blob/main/E_Commerece_Order_Analytics/photos/Architecture.png)
 
 ```text
 ┌──────────────────────────┐
@@ -127,8 +126,7 @@ Performed data quality checks and cleaning operations.
 
 # Most important Concepts of Data engineering
 
-![Validation](https://raw.githubusercontent.com/heeral17/Celebal_Internship_Assignment/refs/heads/main/E_Commerce_Order_Analytics/photos/Validation.png)
-
+![Validation](https://github.com/heeral17/Celebal_Internship_Assignment/blob/main/E_Commerece_Order_Analytics/photos/Validation.png)
 
 ## Step 3 — Database Design & SQL Analytics
 
