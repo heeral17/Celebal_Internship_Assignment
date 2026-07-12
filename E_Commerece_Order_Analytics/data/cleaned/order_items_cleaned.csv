@@ -1,4 +1,0 @@
-item_id,order_id,product_id,quantity,unit_price,discount_percent,invalid_discount,is_return
-1,1,6,1,1987.59,55.81,False,False
-2,3,14,10,976.2,63.02,False,False
-3,4,22,7,304.58,0.59,False,False
